@@ -1,6 +1,6 @@
 import streamlit as st
 import folium
-from streamlit_folium import st_folium
+from streamlit_folium import st_folium, folium_static
 
 # Título da página
 st.title("ClimaSense - Monitoramento Climático")
@@ -35,7 +35,7 @@ folium.Marker(
 ).add_to(mapa)
 
 # Exibe o mapa no Streamlit
-st_data = st_folium(mapa, width=700, height=400)
+st_data = folium_static(mapa, width=700, height=400)
 
 # Botão de Tempo Real
 st.button("Atualizar Notícias")
