@@ -62,17 +62,9 @@ folium.Marker(
 st_data = folium_static(mapa, width=700, height=400)
 
 # Botão de Tempo Real
-st.button("Atualizar Notícias")
+if st.button("Atualizar Notícias"):
+    exibir_noticias()
 
-# Seção de notícias
-st.subheader("Notícias Recentes")
-
-# Notícias relacionadas aos eventos
-st.markdown("""
-- **Queimadas no interior de São Paulo**: Aumentam o número de focos de incêndio no interior de SP, principalmente em Ribeirão Preto.
-- **Queda Brusca da Temparatura no Centro-Oeste**: Correntes de alta pressão vão resfriar a semana no Centro-Oeste.
-- **Enchentes na capital paulista**: Com as fortes chuvas ao longo do dia, as principais vias da cidade de São Paulo estão completamente alagadas.
-""")
 
 # Simulação de alertas
 st.subheader("Alertas Atuais")
