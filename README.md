@@ -1,5 +1,6 @@
 # Projeto-ClimaSense
 
+Link do APP: https://projeto-climasense.streamlit.app/
 
 - Enzo Casagrande | RA: 10400726
 - Marcos Carvalho | RA: 10401844
